@@ -1,4 +1,4 @@
-# Color Picker
+# OpenCV Color Picker
 Simple BGR color picker based on pure OpenCV.  
 Runs in immediate mode.
 
