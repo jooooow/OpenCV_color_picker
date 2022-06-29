@@ -4,7 +4,7 @@
 class ColorPicker
 {
 public:
-	ColorPicker(int window_size, int tube_width, std::string name, cv::Vec3f hsv = cv::Vec3f(0, 1, 1));
+	ColorPicker(int window_size, int tube_width, std::string name, cv::Vec3f initial_hsv = cv::Vec3f(0, 1, 1));
 	void OnMouse(int event, int x, int y, int flags);
 	std::string GetName()
 	{

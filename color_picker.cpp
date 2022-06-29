@@ -6,14 +6,14 @@ static void onMouse(int event, int x, int y, int flags, void* param)
 	picker->OnMouse(event, x, y, flags);
 }
 
-ColorPicker::ColorPicker(int window_size, int tube_width, std::string name, cv::Vec3f hsv)
+ColorPicker::ColorPicker(int window_size, int tube_width, std::string name, cv::Vec3f initial_hsv)
 {
 	if (window_size % 2 == 0)
 		window_size += 1;
 	this->window_size = window_size;
 	this->tube_width = tube_width;
 	this->name = name;
-	this->hsv = hsv;
+	this->hsv = initial_hsv;
 	this->bgr = HSV2BGR(this->hsv);
 
 	GeneratePanel();
