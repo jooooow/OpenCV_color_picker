@@ -1,5 +1,5 @@
 # Color Picker
-An simple BGR color picker based on pure opencv.  
+Simple BGR color picker based on pure OpenCV.  
 Runs in immediate mode.
 
 ## example
